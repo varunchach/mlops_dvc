@@ -7,7 +7,10 @@ __pycache__/
 
 # --- DVC / Data ---
 data/
+!data/**/*.dvc
+!data/*.dvc
 models/
+!models/*.dvc
 |.dvc
 !.gitignore
 
