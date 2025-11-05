@@ -1,0 +1,4 @@
+[core]
+    remote = local_remote
+['remote "local_remote"']
+    url = C:\Users\Satej Raste\Downloads\dvc_remote_store
