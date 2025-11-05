@@ -1,24 +1,56 @@
-# --- Python environment ---
+# =============================
+# PYTHON & ENVIRONMENT
+# =============================
 venv/
 .env/
-*.pyc
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.joblib
 .ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
 
-# --- DVC / Data ---
-data/
-!data/**/*.dvc
-!data/*.dvc
-models/
-!models/*.dvc
-|.dvc
-!.gitignore
+# =============================
+# IDEs / OS / LOGS
+# =============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
 
-# --- MLflow ---
+# =============================
+# MLflow LOCAL FILES
+# =============================
 mlruns/
 mlflow.db
 
-# --- OS / IDE ---
-.DS_Store
-.vscode/
-.idea/
+# =============================
+# DVC TRACKED DATA & MODELS
+# (ignore heavy files, allow .dvc pointers)
+# =============================
+data/
+!data/
+!data/**/*.dvc
+!data/*.dvc
+
+models/
+!models/
+!models/**/*.dvc
+!models/*.dvc
+
+# Always keep the DVC metadata directory tracked
+!.dvc
+
+# =============================
+# OTHER OPTIONAL FILES
+# =============================
+.cache/
+*.csv.zip
+*.tar
+*.tar.gz
+*.zip
